@@ -1,0 +1,16 @@
+.footer {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-hover);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 50%;
+}
+.Contat__title {
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;   
+}
+.Contat__text{
+    font-family: "Montserrat", sans-serif;
+}

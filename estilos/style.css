@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Stack+Sans+Notch&family=Montserrat:ital@0;1&display=swap');
+@import url('header.css');
+@import url('opening.css');
+@import url('experience.css');
+@import url('footer.css');
+@import url('projets.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #EFECE3;
+    --cor-terceira: #8FABD4;
+    --cor-hover: #8FABD4;
+    --cor-link: #4A70A9;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+        .experiencia {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }   
+}

@@ -1,0 +1,15 @@
+.header {
+   padding: 2% 0% 0% 10%;
+}
+.header__menu {
+    display: flex;
+    gap: 40px;
+}
+.menu {
+    color: var(--cor-terceira);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 28px;
+}

@@ -16,10 +16,6 @@
     padding: 28px;
 }
 
-/* ===================== */
-/* RESPONSIVIDADE */
-/* ===================== */
-
 @media (max-width: 1024px) {
 
     .header {

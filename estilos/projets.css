@@ -6,15 +6,15 @@
     --color-primary-5: #8CA9FF;
     --color-primary-6: #9EC6F3;
 
-    --color-neutral-0: #fff;
+    --color-neutral-0: #ffffff;
     --color-neutral-1: #1d1d1d;
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -24,14 +24,18 @@ html {
 section {
     padding: 28px 8%;
 }
+
+
 .section-title {
-    color: #8CA9FF;
+    color: var(--color-primary-5);
     font-size: 1.563rem;
 }
 
 .section-subtitle {
-    font-size: 2.1875rem;
-} 
+    font-size: 2.188rem;
+}
+
+
 #menu {
     display: flex;
     flex-direction: column;
@@ -49,41 +53,55 @@ section {
 }
 
 .dish {
+    width: 25%;
+    padding: 20px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 20px;
     gap: 18px;
-    width: 25%;
-    padding: 20px;
-    background-color: #1d1d1d;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+
+    background-color: var(--color-neutral-1);
+    border-radius: 20px;
+
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, .1);
+
     position: relative;
     overflow: hidden;
 }
 
+.dish img {
+    width: 100%;
+    height: auto;
+}
+
 .dish-heart {
     position: absolute;
-    background-color: #8CA9FF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.563rem;
-    color: #fff;
+
     width: 70px;
     height: 70px;
+
     right: -10px;
     top: -10px;
-    border-radius: 0px 37.5px 0px 42.5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-primary-5);
+    color: var(--color-neutral-0);
+    font-size: 1.563rem;
+
+    border-radius: 0 38px 0 42px;
 }
 
 .dish-description {
-    color: #AAC4F5;
+    color: var(--color-primary-3);
     text-align: center;
 }
 
 .dish-rate i {
-    color: #8CA9FF;
+    color: var(--color-primary-5);
 }
 
 .dish-price {
@@ -91,50 +109,119 @@ section {
     align-items: center;
     gap: 20px;
 }
-.proj__content__links{
+
+.proj__content__links {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     gap: 22px;
 }
-.proj__links{
-   /* background-color: #c1ff72; */
+
+.proj__links {
+    width: 100%;
+    max-width: 350px;
+
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 16px;
-    border: 2px solid var(--cor-terceira);
-    width: 120%;
-    text-align: center;
+
+    padding: 21px 0;
+
+    border: 2px solid var(--color-primary-5);
     border-radius: 20px;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 21.5px 0;
+
+    color: var(--color-neutral-0);
     text-decoration: none;
-    color: var(--cor-secundaria);
+
     font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    transition: .3s;
 }
+
 .proj__links:hover {
-    background-color: var(--cor-link);
+    background-color: var(--color-primary-5);
 }
 
 @media screen and (max-width: 1170px) {
+
     #dishes {
         flex-wrap: wrap;
-        justify-content: center;
+        gap: 20px;
     }
 
     .dish {
-        width: calc(50% - 12px);
+        width: calc(50% - 10px);
+    }
+
+    .proj__links {
+        max-width: 320px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .dish {
-        width: 100%;
+@media screen and (max-width: 768px) {
+
+    section {
+        padding: 40px 5%;
     }
 
-    #menu .section-subtitle {
+    .section-title {
+        font-size: 1.3rem;
         text-align: center;
     }
-} 
+
+    .section-subtitle {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #dishes {
+        gap: 18px;
+    }
+
+    .dish {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .proj__links {
+        max-width: 300px;
+        font-size: 1.25rem;
+        padding: 18px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    section {
+        padding: 30px 5%;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .dish {
+        padding: 16px;
+    }
+
+    .dish-heart {
+        width: 55px;
+        height: 55px;
+        font-size: 1.2rem;
+        border-radius: 0 30px 0 35px;
+    }
+
+    .proj__links {
+        width: 100%;
+        max-width: 100%;
+        font-size: 1.1rem;
+        padding: 16px 0;
+    }
+}

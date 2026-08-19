@@ -1,41 +1,116 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Suzane Luz</title>
-    <link rel="stylesheet" href="./estilos/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio - Desenvolvedor Web</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header class="header">
-        <nav class="header__menu">
-            <a class="menu" href="index.html">Home</a>
-            <a class="menu" href="experiencias.html">Experiências</a>
-            <a class="menu" href="projetos.html">Projetos</a>
-        </nav>
-    </header>
-    <main class="opening">
-        <section class="opg__content">
-            <h1 class="opg__title">Transformando ideias em experiências digitais com  <strong class="strong">código e criatividade. </strong></h1>
-            <p class="opg__text">Olá! Sou Suzane Luz, estudante de <strong>Engenharia de Computação</strong>, apaixonada por tecnologia, programação e robótica. Estou em constante aprendizado, desenvolvendo projetos que unem criatividade e lógica, com foco em desenvolvimento web, hardware e automação.</p>
-            <p class="opg__text">Neste portfólio você encontrará alguns dos meus projetos, experiências e a evolução da minha jornada como desenvolvedora.</p>
-            <div class="opg__content__links">
-                <h2 class="opg__subtitle">Acesse minhas redes:</h2>
-                <a class="opg__links" href="https://github.com/SuzaneLuzz">
-                    <img src="./assets/github.png" alt="Logo GitHub">
-                    GitHub
-                </a>
-                <a class="opg__links" href="https://www.linkedin.com/in/suzaneazevedoluz/">
-                    <img src="./assets/linkedin.png" alt="Logo Linkedin">
-                    Linkedin
-                </a>
-            </div>
-        </section>
-        <img class="opg__img" src="./assets/imagem.png" alt="">
-    </main>
-    <footer class="footer">
-        <p class="Contat__title">Contato</p>
-        <p class="Contat__text">suzane.aluz@gmail</p>
-    </footer>
+
+  <!-- Seção Início -->
+  <header id="inicio">
+    <h1>Suzane Luz</h1>
+    <p>Desenvolvedor Web Full Stack — Criando experiências digitais funcionais e modernas.</p>
+    <button class="btn-primary" id="btn-projetos">
+      Veja meus projetos
+    </button>
+  </header>
+
+ <section id="experiencias">
+  <div class="container">
+    <h2>Experiências</h2>
+    <div class="experiencia-lista">
+      <div class="experiencia-item">
+        <h3>Selbetti</h3>
+        <span>Aprendiz de Operações</span>
+        <p>Atuei apoiando a equipe técnica em tarefas de manutenção de computadores, redes e sistemas.</p>
+      </div>
+       <!-- <div class="experiencia-item">
+        <h3>Agência ABC</h3>
+        <span>Estagiário em Desenvolvimento Web — Jul 2019 a Dez 2020</span>
+        <p>Suporte na criação de sites institucionais com HTML, CSS e JavaScript, focando na acessibilidade.</p>
+      </div>
+    </div> -->
+
+<section id="tecnologias">
+  <div class="container">
+    <h2>Tecnologias que Domino</h2>
+    <div class="tecnologias-lista">
+      <span class="tecnologia-item">HTML5</span>
+      <span class="tecnologia-item">CSS3</span>
+      <span class="tecnologia-item">JavaScript</span>
+      <span class="tecnologia-item">React</span>
+      <span class="tecnologia-item">Node.js</span>
+      <span class="tecnologia-item">Git</span>
+      <span class="tecnologia-item">SQL</span>
+      <span class="tecnologia-item">TypeScript</span>
+      <span class="tecnologia-item">Docker</span>
+    </div>
+  </div>
+</section>
+
+    <!-- Nova seção para cursos -->
+    <h2 style="margin-top: 60px;">Cursos</h2>
+    <div class="experiencia-lista">
+      <div class="experiencia-item">
+        <h3>Manutenção de Microcomputadores</h3>
+        <span>Senac — 2025</span>
+        <p>Curso voltado à manutenção de microcomputadores, abordando diagnóstico de falhas, montagem e desmontagem, manutenção preventiva e corretiva, instalação e configuração de sistemas, softwares e componentes de hardware.
+</p>
+      </div>
+      <div class="experiencia-item">
+        <h3>Desenvolvimento Web Full Stack</h3>
+        <span>Alura — 2026</span>
+        <p>Formação completa em HTML, CSS, JavaScript, Node.js e banco de dados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Seção Projetos -->
+  <section id="projetos">
+    <div class="container">
+      <h2>Meus Projetos</h2>
+      <div class="projetos-grid">
+        <div class="projeto-card">
+          <img class="projeto-img" src="assets/landingpage.png" alt="Screenshot Projeto 1" />
+          <div class="projeto-info">
+            <h3>Landing page</h3>
+            <p>Landing page responsiva desenvolvida com HTML e CSS para hamburgueria artesanal, apresentando design moderno, tipografia ousada e layout otimizado para experiência do usuário.</p>
+            <a class="projeto-link" href="https://suzaneluzz.github.io/delicia-burgers/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <img class="projeto-img" src="assets/culturas.png" alt="Screenshot Projeto 2" />
+          <div class="projeto-info">
+            <h3>Explorador de Culturas</h3>
+            <p>Site que reúne histórias, receitas, músicas e costumes de diferentes regiões, inclusive bairros e cidades pequenas.Os usuários podem contribuir compartilhando informações sobre sua própria cultura local.</p>
+            <a class="projeto-link" href="https://suzaneluzz.github.io/culturas/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <img class="projeto-img" src="assets/hover.png" alt="Screenshot Projeto 3" />
+          <div class="projeto-info">
+            <h3>Hover Animations</h3>
+            <p>Projeto com exemplo de animaçã utilizando o efeito :hover em HTML e CSS. O objetivo é demonstrar diferentes formas de criar interações visuais, tornando botões, cartões, imagens e outros elementos mais dinâmicos e responsivos.</p>
+            <a class="projeto-link" href="https://suzaneluzz.github.io/hover-animation/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Contato: <a href="suzane.aluz@gmail.com">suzane.aluz@gmail.com</a> | 
+      <a href="https://github.com/SuzaneLuzz" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/suzaneazevedoluz/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+    <small>© 2026 Suzane Luz. Todos os direitos reservados.</small>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
